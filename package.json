@@ -1,0 +1,29 @@
+{
+  "name": "lukas_seiwald_portfolio",
+  "version": "1.0.0",
+  "description": "web dev portfolio",
+  "main": "index.html",
+  "scripts": {
+    "watch-sass": "sass --watch src/scss/app.scss:dist/css/app.css",
+    "watch-js": "watchify src/js/main.js -o dist/js/app.js -dv",
+    "watch": "npm run watch-sass & npm run watch-js",
+    "build-js": "browserify src/js/main.js | uglifyjs -mc > dist/js/app.js",
+    "build-sass": "sass src/scss/app.scss:dist/css/app.css --style compressed",
+    "build": "npm run build-sass & npm run build-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukasseiwald/myportfolio.git"
+  },
+  "author": "Lukas Seiwald",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukasseiwald/myportfolio/issues"
+  },
+  "homepage": "https://github.com/lukasseiwald/myportfolio#readme",
+  "dependencies": {
+    "browserify": "^16.1.0",
+    "uglify": "^0.1.5",
+    "watchify": "^3.10.0"
+  }
+}
