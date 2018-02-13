@@ -1,17 +1,38 @@
+h1 {
+  color: #FF0032;
+  font-size: 3em;
+  font-family: 'Bangers', cursive; }
+
 body {
-  background-color: #e7e7e6;
+  background-color: #150C16;
   color: #fefefe;
   margin: 0 0;
   border: none; }
-  body section {
-    border: none;
-    overflow: hidden; }
-  body #start {
+  body .title {
+    font-size: 25px;
+    color: #fefefe;
+    font-family: 'VT323', monospace;
+    margin-left: 1em;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: 1em; }
+  body header {
+    position: relative;
     height: 80vh;
-    background: #c1a784 url("../../src/img/background_start.jpg") no-repeat center center fixed;
+    margin-top: -2em;
+    background: #222 url("../../src/img/background_start.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover; }
+    background-size: cover;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); }
+    body header .section_wrapper #title1 {
+      animation: typing 1.5s steps(14, end);
+      -webkit-animation: typing 1.5s steps(14, end);
+      animation: typing2 3s steps(25, end); }
+  body #about {
+    margin-top: -12vw;
+    margin-left: 5vw; }
 
 /*# sourceMappingURL=app.css.map */
