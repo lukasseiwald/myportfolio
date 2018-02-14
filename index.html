@@ -7,8 +7,38 @@
 	<link rel="stylesheet" href="dist/css/app.css">
 	<link href="https://fonts.googleapis.com/css?family=Bangers|Roboto" rel="stylesheet"></head>
 <body>
+
+	<div id="navigation">
+    <div  class="nav-item" id="logo">
+      <a class="nav-link scroll" href="#start">
+        <img src="src/img/lukas.svg"/>
+      </a>
+    </div>
+    <div class="burgerwrapper" onclick="dropDown()">
+      <div class="burger" id="burgerDrop"></div>
+    </div>
+    <nav id="navDrop">
+      <ul>
+        <li class="nav-item active">
+          <a class="nav-link scroll" href="#about">
+            about
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scroll" href="#projects">
+            projects
+          </a>
+        </li class="nav-item">
+        <li>
+          <a class="nav-link scroll" href="#contact">
+            contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 	
-	<header>
+	<header id="start">
 		<div class="header_wrapper">
 			<div class="header_title">
 				<h2>
@@ -26,6 +56,11 @@
   	</header>
   	<section id="about">
 	  <h1>About</h1>
+	  <div class="about_text_wrapper">
+		<p class="about_text">I am currently a multimediatechnology student with Web Development as Major, at the University of Applied Sciences in Salzburg</p>
+	  </div>
+	  <div id="trigger_nav">
+	  </div>
 	</section>
 	<section id="projects">
 	  <h1>Projects</h1>
@@ -36,16 +71,18 @@
 
 
 
+	<script type="text/javascript">
+		function dropDown() {
+			document.getElementById("navDrop").classList.toggle("drop");
+			document.getElementById("burgerDrop").classList.toggle("x");
+			document.getElementById("navigation").classList.toggle("h");
+		}
+	</script>
 
 
 
-
-
-
-
-
-
-
-	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+	<script src="dist/js/app.js"></script>
 </body>
 </html>

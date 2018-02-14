@@ -1,3 +1,4 @@
+$light: #eeeeee;
 $red: #FF0032;
 $dark: #160A16;
 $blue: #074050;
@@ -27,12 +28,172 @@ h3{
 
 
 body {
-	background-color: #150C16;
-  	color: #fefefe;
+	background-color: $light;
+  	color: #333;
   	margin: 0 0;
   	border: none;
   	section{
-  		height: 100vh;
+  		height: 80vh;
+  	}
+  	#navigation{
+  		position: fixed;
+	  	width: 100%;
+	  	display: none;
+	  	opacity: 0;
+	  	z-index: 2000;
+	  	justify-content: space-between;
+	  	padding: 0.5em 1em 0.5em 1em;
+	  	background-color: #140B15;
+	  	&.fade-in{
+	  		display: flex;
+  			opacity: 1;
+	  	}
+	  	nav{
+	  		padding-top: 1.1em;
+	  	}
+	  	ul{
+	  		display: flex;
+  			padding-right: 3em;
+  			li{
+  				padding-right: 5.7em;
+  				list-style: none;
+  				&:last-of-type{
+		  			padding: 0;
+  				}
+  				&.active{
+				  	a{
+						color: #FF0032;
+				  	}	
+				}
+  			}
+
+	  	}
+	  	a{
+	  		text-decoration: none;
+		  	list-style-type: square;
+		  	list-style: none;
+		  	color: #fefefe;
+		  	padding: 1.5em 0.8em;
+		  	font-size: 1.2em;
+		  	&:hover{
+		  		color: #FF0032;
+		  	}
+	  	}
+	  	.burgerwrapper{
+	  		display: none;
+		  	cursor: pointer;
+		  	position: absolute;
+		  	width: 2.8em;
+		  	height: 3em;
+		 	right: 0;
+		  	margin-top: 0.2em;
+		  	margin-right: 3em;
+		  	.burger{
+		  		margin-top: 1.5em;
+			    right: 0;
+			    background-color: #fefefe;;
+			    border-style: none;
+			    width: 2.4em;
+			    height: 0.3em;
+			    transition: all 0.3s ease-out;
+			    &::before{
+				    margin-top: 1.5em;
+				    position: absolute;
+				    content: "";
+				    width: 2.4em;
+				    height: 0.3em;
+				    top: 0;
+				    left: 0;
+				    background-color: inherit;
+				    transform: translate(0, -0.7em);
+				    transition: all 0.5s ease;
+			    }
+			    &::after{
+			    	margin-top: 1.5em;
+				  	position: absolute;
+				  	content: "";
+				 	width: 2.4em;
+				  	height: 0.3em;
+				  	top: 0;
+				  	left: 0;
+				  	background-color: inherit;
+				  	transform: translate(0, 0.7em);
+				  	transition: all 0.5s ease;	
+			    }
+		  	}
+	  	}
+	  	.burger.x{
+	  		background-color: transparent;
+  			cursor: pointer;
+  			&::before{
+				transform: rotate(45deg);
+			  	background-color: #074050;;
+			  	width: 2.4em;
+  			}
+  			&::after{
+  				transform: rotate(315deg);
+  				background-color: #074050;;
+  			}
+	  	}
+		#logo{
+			width: 50px;
+			a{
+				padding: 0em 0em;
+			}
+			img{
+				width: 50px;
+  				padding-left: 1em;
+  				transition: content 3s;
+  				&:hover{
+  					content: url("../../src/img/superlukas.svg");
+				}
+			}
+		}
+		@media screen and (max-width: $screen-break2) {
+			display: block;
+			.burgerwrapper{
+				display: block;
+			}
+			 nav {
+			    display: none;
+			    width: 100%;
+			    height: 20%;
+
+			    ul {
+			      display: block;
+			      margin-top: 3em;
+			      background-color: #074050;;
+			      margin-left: -9em;
+			      height: 100%;
+			      padding-right: 0;
+			      li {
+			        width: 100%;
+			        border-bottom: 1px solid #555;
+			        text-align: center;
+			        &:hover {
+			          background-color: #e7e7e6;
+			        }
+			        a {
+			          display: block;
+			          width: 100%;
+			          height: 1.4em;
+			          padding-top: 0.9em;
+			          padding-bottom: 0.7em;
+			          color: #857371;
+			          &:hover {
+			            color: #ad7d59;
+			          }
+			        }
+			      }
+			    }
+			    &.drop {
+			      display: block;
+			    }
+			  }
+			  &.h {
+			    padding-bottom: 0;
+			  }
+		}
   	}
 	header {
 	  	position: relative;
@@ -85,6 +246,7 @@ body {
 	}
 	/* mobile */
 	#about{
+		background-color: $light;
   		h1{
   			margin-top: -29vw;
     		margin-left: 9vw;

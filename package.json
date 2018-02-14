@@ -23,6 +23,7 @@
   "homepage": "https://github.com/lukasseiwald/myportfolio#readme",
   "dependencies": {
     "browserify": "^16.1.0",
+    "scrollmagic": "^2.0.5",
     "uglify": "^0.1.5",
     "watchify": "^3.10.0"
   }
