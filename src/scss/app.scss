@@ -139,7 +139,6 @@ body {
 			}
 			img{
 				width: 50px;
-  				padding-left: 1em;
   				transition: content 3s;
   				&:hover{
   					content: url("../../src/img/superlukas.svg");
@@ -165,12 +164,7 @@ body {
 			      padding-right: 0;
 			      li {
 			        width: 100%;
-			        border-bottom: 0.5px solid #fefefe;
 			        text-align: center;
-			        &:first-child{
-			        	border-top: 0.5px solid #fefefe;
-
-			        }
 			        &:hover {
 			          background-color: #fefefe;
 			        }
@@ -193,7 +187,7 @@ body {
 			  }
 			  &.h {
 			    padding-bottom: 0;
-			    height: 26.39%;
+			    /*height: 26.39%;*/
 		    	  	nav{
 				  		padding-top: 1.1em;
 				  	}
