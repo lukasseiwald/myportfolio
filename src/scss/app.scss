@@ -43,7 +43,7 @@ body {
 	  	z-index: 2000;
 	  	justify-content: space-between;
 	  	padding: 0.5em 1em 0.5em 1em;
-	  	background-color: #140B15;
+	  	background-color: #074050;
 	  	&.fade-in{
 	  		display: flex;
   			opacity: 1;
@@ -91,7 +91,7 @@ body {
 		  	.burger{
 		  		margin-top: 1.5em;
 			    right: 0;
-			    background-color: #fefefe;;
+			    background-color: #fefefe;
 			    border-style: none;
 			    width: 2.4em;
 			    height: 0.3em;
@@ -104,7 +104,7 @@ body {
 				    height: 0.3em;
 				    top: 0;
 				    left: 0;
-				    background-color: inherit;
+				    background-color: #fefefe;
 				    transform: translate(0, -0.7em);
 				    transition: all 0.5s ease;
 			    }
@@ -116,7 +116,7 @@ body {
 				  	height: 0.3em;
 				  	top: 0;
 				  	left: 0;
-				  	background-color: inherit;
+				  	background-color: #fefefe;
 				  	transform: translate(0, 0.7em);
 				  	transition: all 0.5s ease;	
 			    }
@@ -127,12 +127,12 @@ body {
   			cursor: pointer;
   			&::before{
 				transform: rotate(45deg);
-			  	background-color: #074050;;
+			  	background-color: #fefefe;
 			  	width: 2.4em;
   			}
   			&::after{
   				transform: rotate(315deg);
-  				background-color: #074050;;
+  				background-color: #fefefe;
   			}
 	  	}
 		#logo{
@@ -168,10 +168,14 @@ body {
 			      padding-right: 0;
 			      li {
 			        width: 100%;
-			        border-bottom: 1px solid #555;
+			        border-bottom: 0.5px solid #fefefe;
 			        text-align: center;
+			        &:first-child{
+			        	border-top: 0.5px solid #fefefe;
+
+			        }
 			        &:hover {
-			          background-color: #e7e7e6;
+			          background-color: #fefefe;
 			        }
 			        a {
 			          display: block;
@@ -179,9 +183,9 @@ body {
 			          height: 1.4em;
 			          padding-top: 0.9em;
 			          padding-bottom: 0.7em;
-			          color: #857371;
+			          color: #fefefe;
 			          &:hover {
-			            color: #ad7d59;
+			            color: #FF0032;
 			          }
 			        }
 			      }
@@ -192,6 +196,7 @@ body {
 			  }
 			  &.h {
 			    padding-bottom: 0;
+			    height: 26.39%;
 			  }
 		}
   	}
