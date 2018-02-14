@@ -4,7 +4,7 @@ h1 {
   font-family: 'Bangers', cursive; }
 
 h2 {
-  color: #fefefe;
+  color: #eaeaea;
   font-size: 2em;
   font-family: 'Roboto';
   font-weight: bold; }
@@ -31,9 +31,9 @@ body {
     -o-background-size: cover;
     background-size: cover;
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 87%, 50% 75%, 0% 75%); }
-    body header .superlukas {
+    body header .header_hero {
       position: absolute;
-      top: 5%;
+      top: 14.5%;
       left: 15%;
       height: 260px;
       width: 260px;
@@ -43,10 +43,18 @@ body {
       -o-background-size: cover;
       background-size: cover;
       transition: 0.6s ease-in; }
-      body header .superlukas:hover {
+      body header .header_hero:hover {
         background-image: url("../../src/img/superlukas.svg"); }
-      body header .superlukas:focus {
+      body header .header_hero:focus {
         background-image: url("../../src/img/superlukas.svg"); }
+    body header .header_title {
+      position: absolute;
+      top: 4%;
+      left: 24%; }
+    body header .header_title2 {
+      position: absolute;
+      top: 55%;
+      left: 30%; }
   body #about h1 {
     margin-top: -29vw;
     margin-left: 9vw; }
