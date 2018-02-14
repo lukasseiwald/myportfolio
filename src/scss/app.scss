@@ -251,7 +251,6 @@ body {
 	/* mobile */
 	#about{
 		background-color: $light;
-		clip-path: polygon(100% 0, 0% 0%, 0 86%, 78% 87%, 100% 100%);
   		h1{
   			margin-top: -29vw;
     		margin-left: 9vw;
@@ -292,6 +291,32 @@ body {
 			margin-left: 9vw;
 			padding-top: 3em;
 		}
+		.contact_wrapper{
+			margin-top: 3em;
+			display: flex;
+			justify-content: center;
+			.mail_link{
+				text-decoration: none;
+				color: $light;
+				.mail_wrapper{
+					border: 0.1em solid #eeeeee;
+	    			width: 16em;	
+				    padding: 0.4em 0.4em;
+				    display: flex;
+				    flex-direction: row;
+				    justify-content: center;
+				    .mail_icon{
+						width: 4em;
+	    				height: 4em;
+	    				padding-right: 1em;
+				    }
+				    .mail_text{
+				    	font-size: 1.4em;
+	    				padding-top: 0.8em;
+				    }
+				}
+			}
+		}	
 	}
 
 }
