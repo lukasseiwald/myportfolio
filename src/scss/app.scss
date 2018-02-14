@@ -48,9 +48,6 @@ body {
 	  		display: flex;
   			opacity: 1;
 	  	}
-	  	nav{
-	  		padding-top: 1.1em;
-	  	}
 	  	ul{
 	  		display: flex;
   			padding-right: 3em;
@@ -197,6 +194,9 @@ body {
 			  &.h {
 			    padding-bottom: 0;
 			    height: 26.39%;
+		    	  	nav{
+				  		padding-top: 1.1em;
+				  	}
 			  }
 		}
   	}
