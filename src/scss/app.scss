@@ -13,6 +13,18 @@ h1{
 	font-size: 3em;
 	font-family: 'Bangers', cursive;
 }
+h2{
+	color: #fefefe;
+	font-size: 2em;
+	font-family: 'Roboto';
+	font-weight: bold;
+}
+h3{
+	color: #fefefe;
+	font-size: 1.5em;
+	font-family: 'Roboto';
+}
+
 
 body {
 	background-color: #150C16;
@@ -24,22 +36,27 @@ body {
   	}
 	header {
 	  	position: relative;
-	  	height: 80vh;
-	  	margin-top: -3.35em;
+	  	height: 90vh;
 	  	background: #222 url("../../src/img/background_start_blur.jpg") fixed;
 	    -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
 		clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 87%, 50% 75%, 0% 75%);
-		.section_wrapper{
-			-webkit-box-align:center;
-		    -webkit-box-pack:center;
-		    display:-webkit-box;
-			
-			.title{
-				font-size: 4em;
-				color: #fefefe;
+		.superlukas{
+			position: absolute;
+			top: 15%;
+			left: 35%;
+			height: 260px;
+			width: 260px;
+			background-image: url("https://vectr.com/nakama/f7m4ZWisp.svg?width=260&height=260&select=f7m4ZWisppage0");
+			-webkit-background-size: cover;
+	        -moz-background-size: cover;
+	        -o-background-size: cover;
+	        background-size: cover;
+	        transition: 0.6s ease-in;
+			&:hover{
+				background-image: url("https://vectr.com/nakama/c22yfjWBR6.svg?width=260&height=260&select=c22yfjWBR6page0");
 
 			}
 		}
