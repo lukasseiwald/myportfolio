@@ -9,6 +9,10 @@ $screen-break3: 910px;
 
 
 
+* { 
+	margin: 0; 
+	padding: 0; 
+}
 h1{
 	color: $red;
 	font-size: 3em;
@@ -33,7 +37,7 @@ body {
   	margin: 0 0;
   	border: none;
   	section{
-  		height: 80vh;
+  		height: 100vh;
   	}
   	#navigation{
   		position: fixed;
@@ -44,6 +48,7 @@ body {
 	  	justify-content: space-between;
 	  	padding: 0.5em 1em 0.5em 1em;
 	  	background-color: #074050;
+	  	transition: 0.2s all ease-in;
 	  	&.fade-in{
 	  		display: flex;
   			opacity: 1;
@@ -212,7 +217,7 @@ body {
 			.header_hero{
 				position: absolute;
 				top: 19.5%;
-				 	left: 11%;
+				left: 11%;
 				height: 260px;
 				width: 260px;
 				background-image: url("../../src/img/superlukas.svg");
@@ -230,12 +235,12 @@ body {
 			}
 			.header_title{
 				position: absolute;
-			    top: 4%;
+			    top: 11%;
 				left: 21%;
 			}
 			.header_title2{
 				position: absolute;
-			   	top: 76%;
+			   	top: 82%;
 				left: 27%;
 			}
 			@media screen and (min-width: $screen-break2) {
@@ -246,6 +251,7 @@ body {
 	/* mobile */
 	#about{
 		background-color: $light;
+		clip-path: polygon(100% 0, 0% 0%, 0 86%, 78% 87%, 100% 100%);
   		h1{
   			margin-top: -29vw;
     		margin-left: 9vw;
@@ -260,8 +266,32 @@ body {
 			}
 
   		}
+  		.about_text_wrapper{
+  			display: flex;
+  			justify-content: center;
+  			.about_text{
+  				font-family: 'Roboto';
+  				font-size: 1.5em;
+  				padding: 1em 1em;
+  			}
+  		}
 
 	}
+	#projects{
+		background-color: #C49363;
+		h1{
+			margin-left: 9vw;
+			padding-top: 3em;
+			color: #160A16;
+		}
+	}
+	#contact{
+		background-color: #1C95A3;
+		h3{
 
+			margin-left: 9vw;
+			padding-top: 3em;
+		}
+	}
 
 }
