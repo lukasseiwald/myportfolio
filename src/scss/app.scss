@@ -45,8 +45,8 @@ body {
 		clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 87%, 50% 75%, 0% 75%);
 		.superlukas{
 			position: absolute;
-			top: 15%;
-			left: 35%;
+			top: 5%;
+			left: 15%;
 			height: 260px;
 			width: 260px;
 			background-image: url("../../src/img/lukas.svg");
@@ -57,7 +57,9 @@ body {
 	        transition: 0.6s ease-in;
 			&:hover{
 				background-image: url("../../src/img/superlukas.svg");
-
+			}
+			&:focus{
+				background-image: url("../../src/img/superlukas.svg");
 			}
 		}
 	}

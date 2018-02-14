@@ -1,2 +1,63 @@
-h1{color:#FF0032;font-size:3em;font-family:'Bangers', cursive}h2{color:#fefefe;font-size:2em;font-family:'Roboto';font-weight:bold}h3{color:#fefefe;font-size:1.5em;font-family:'Roboto'}body{background-color:#150C16;color:#fefefe;margin:0 0;border:none}body section{height:100vh}body header{position:relative;height:90vh;background:#222 url("../../src/img/background_start_blur.jpg") fixed;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;clip-path:polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 87%, 50% 75%, 0% 75%)}body header .superlukas{position:absolute;top:15%;left:35%;height:260px;width:260px;background-image:url("../../src/img/lukas.svg");-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;transition:0.6s ease-in}body header .superlukas:hover{background-image:url("../../src/img/superlukas.svg")}body #about h1{margin-top:-29vw;margin-left:9vw}@media screen and (min-width: 440px){body #about h1{margin-top:-23vw}}@media screen and (min-width: 610px){body #about h1{margin-top:-16vw}}@media screen and (min-width: 910px){body #about h1{margin-top:-6vw}}
+h1 {
+  color: #FF0032;
+  font-size: 3em;
+  font-family: 'Bangers', cursive; }
+
+h2 {
+  color: #fefefe;
+  font-size: 2em;
+  font-family: 'Roboto';
+  font-weight: bold; }
+
+h3 {
+  color: #fefefe;
+  font-size: 1.5em;
+  font-family: 'Roboto'; }
+
+body {
+  background-color: #150C16;
+  color: #fefefe;
+  margin: 0 0;
+  border: none;
+  /* mobile */ }
+  body section {
+    height: 100vh; }
+  body header {
+    position: relative;
+    height: 90vh;
+    background: #222 url("../../src/img/background_start_blur.jpg") fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 87%, 50% 75%, 0% 75%); }
+    body header .superlukas {
+      position: absolute;
+      top: 5%;
+      left: 15%;
+      height: 260px;
+      width: 260px;
+      background-image: url("../../src/img/lukas.svg");
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      transition: 0.6s ease-in; }
+      body header .superlukas:hover {
+        background-image: url("../../src/img/superlukas.svg"); }
+      body header .superlukas:focus {
+        background-image: url("../../src/img/superlukas.svg"); }
+  body #about h1 {
+    margin-top: -29vw;
+    margin-left: 9vw; }
+    @media screen and (min-width: 440px) {
+      body #about h1 {
+        margin-top: -23vw; } }
+    @media screen and (min-width: 610px) {
+      body #about h1 {
+        margin-top: -16vw; } }
+    @media screen and (min-width: 910px) {
+      body #about h1 {
+        margin-top: -6vw; } }
+
 /*# sourceMappingURL=app.css.map */
