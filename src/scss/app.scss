@@ -335,7 +335,6 @@ body {
 	}
 	#projects{
 		background-color: #C49363;
-		height: 150vh;
 		h1{
 			margin-left: 1em;
 			padding-top: 1em;
@@ -369,13 +368,14 @@ body {
 			}
 		}
 		@media only screen and (max-width: 430px) {
+			height: 160vh;
 			.screenshot{
 					width:  300px;
 					height: 300px;
 				}
 		}
 		@media only screen and (min-width: 430px) {
-			height: 155vh;
+			height: 170vh;
 			.screenshot{
 				width: 400px;
 				height: 400px;
