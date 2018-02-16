@@ -13,6 +13,7 @@ var simplemaps_worldmap_mapdata={
     all_states_inactive: "no",
     all_states_zoomable: "no",
     
+
     //Location defaults
     location_description: "Location description",
     location_color: "#FF0067",
@@ -80,10 +81,10 @@ var simplemaps_worldmap_mapdata={
       description: " "
     },
     AE: {
-      name: "United Arab Emirates",
-      description: " ",
-      color: "#FF0032",
-      hover_color: "#DD0010"
+      name: "<p style=\"font-size: 2.5em; font-family: 'Bangers'; color: rgb(255, 0, 50)\";>United Arab Emirates<p>",
+      description: "<div style=\"width: 24em\";> <p style=\"font-size: 1.5em; font-family: 'Roboto'; color: #160A16\";>Grew up in Abu Dhabi from 1999 - 2006</p>",
+      hover_color: "#DD0010",
+      color: "#FF0032"
     },
     AR: {
       name: "Argentina",
@@ -97,11 +98,10 @@ var simplemaps_worldmap_mapdata={
       name: "Australia"
     },
     AT: {
-      name: "Austria",
-      description: "1997 Born \n 2014 moved back",
+      name: "<p style=\"font-size: 2.5em; font-family: 'Bangers'; color: rgb(255, 0, 50)\";>Austria<p>",
+      description: "<div style=\"width: 24em\";> <p style=\"font-size: 1.5em; font-family: 'Roboto'; color: #160A16\";>Born near Salzburg 1997</p><div style=\" width: 20em; height: 0.1em; border-radius: 2em; background-color: #222; margin-top: 0.4em; margin-bottom: 0.4em \";></div><p style=\"font-size: 1.5em; font-family: 'Roboto'; color: #160A16\";>Last years of school 2013 - 2015 </p><div style=\" width: 20em; height: 0.05em; border-radius: 2em; background-color: #222; margin-top: 0.4em; margin-bottom: 0.4em \";></div> <p style=\"font-size: 1.5em; font-family: 'Roboto'; color: #160A16\";>Civilian service at the Red Cross as paramedic until 2016 </p><div style=\" width: 20em; height: 0.1em; border-radius: 2em; background-color: #222; margin-top: 0.4em; margin-bottom: 0.4em \";></div><p style=\"font-size: 1.5em; font-family: 'Roboto'; color: #160A16\";> 2016 until now: MultiMedia Technology Student at the University of Applied Sciences Salzburg</p>",
       hover_color: "#DD0010",
-      color: "#FF0032",
-      zoomable: "yes"
+      color: "#FF0032"
     },
     AZ: {
       name: "Azerbaijan",
@@ -220,8 +220,8 @@ var simplemaps_worldmap_mapdata={
       description: " "
     },
     CZ: {
-      name: "Czech Republic",
-      description: " ",
+      name: "<p style=\"font-size: 2.5em; font-family: 'Bangers'; color: rgb(255, 0, 50)\";>Czech Republic<p>",
+      description: "<div style=\"width: 24em\";> <p style=\"font-size: 1.5em; font-family: 'Roboto'; color: #160A16\";>2006 - 2012: German international school Prague</p>",
       hover_color: "#DD0010",
       color: "#FF0032"
     },
@@ -728,8 +728,8 @@ var simplemaps_worldmap_mapdata={
       description: " "
     },
     US: {
-      name: "United States",
-      description: " ",
+      name: "<p style=\"font-size: 2.5em; font-family: 'Bangers'; color: rgb(255, 0, 50)\";>United States<p>",
+      description: "<div style=\"width: 24em\";> <p style=\"font-size: 1.5em; font-family: 'Roboto'; color: #160A16\";>Went to High School in Pennsylvania in the year 2013</p>",
       hover_color: "#DD0010",
       color: "#FF0032"
     },

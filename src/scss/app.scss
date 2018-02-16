@@ -276,7 +276,43 @@ body {
   				padding: 1em 1em;
   			}
   		}
+  		.legend_wrapper{
+  			justify-content: center;
+  			display:flex;
+  			flex-direction: row;
+  			width: 100%;
+  			.lived{
+  				margin: 2em 2em;
+  				display:flex;
+  				flex-direction: row;
+  				.lived_color{
+  					margin-right: 1em;
+  					width: 1em;
+  					height: 1em;
+					background-color: #FF0032;
+  				}
+  				.lived_text{
 
+  				}
+  			}
+  			.visited{
+  				margin: 2em 2em;
+  				display:flex;
+  				flex-direction: row;
+  				.visited_color{
+  					margin-right: 1em;
+  					width: 1em;
+  					height: 1em;
+  					background-color: #1C95A3;
+  				}
+  				.visited_text{
+
+  				}
+  			}
+  		}
+		@media screen and (min-width: $screen-break3) {
+			height: 130vh;
+		}
 	}
 	#projects{
 		background-color: #C49363;
