@@ -29,6 +29,17 @@ h3{
 	font-size: 1.5em;
 	font-family: 'Roboto';
 }
+.flex_wrapper_c{
+	width: 100%;		
+	display: flex;
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	justify-content: center;
+	flex-direction: column;
+}
 
 
 body {
@@ -151,7 +162,7 @@ body {
 				}
 			}
 		}
-		@media screen and (max-width: $screen-break2) {
+		@media screen and (max-width: 800px) {
 			display: block;
 			.burgerwrapper{
 				display: block;
@@ -318,7 +329,54 @@ body {
 				display: none;			
 			}
   		}
-  		.skill_wrapper{
+		@media screen and (min-width: $screen-break3) {
+			height: 180vh;
+		}
+	}
+	#projects{
+		background-color: #C49363;
+		height: 160vh;
+		h1{
+			margin-left: 1em;
+			padding-top: 1em;
+			color: #160A16;
+		}
+		.projects_wrapper{
+			margin-top: 2em;
+			display: table;
+  			width: 100%;
+			.project{
+				display: table-cell;
+  				align-items: center;
+  				vertical-align: middle;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				h2{
+					margin-top: 2em;
+					margin-bottom: 1em;
+				}
+				p{
+					font-family: 'Roboto';
+					font-size: 1em;
+
+				}
+				img{
+					width: 90%;
+					height: 90%;
+				}
+			}
+		}
+		@media screen and (min-width: $screen-break3) {
+			height: 150vh;
+		}
+	}
+	#skills{
+		h1{
+			margin-left: 1em;
+			padding-top: 1em;
+		}
+		.skill_wrapper{
   			display: flex;
   			flex-direction: row;
   			justify-content: space-around;
@@ -342,17 +400,6 @@ body {
   				}
   			}
   		}
-		@media screen and (min-width: $screen-break3) {
-			height: 180vh;
-		}
-	}
-	#projects{
-		background-color: #C49363;
-		h1{
-			margin-left: 9vw;
-			padding-top: 3em;
-			color: #160A16;
-		}
 	}
 	#contact{
 		background-color: #1C95A3;
