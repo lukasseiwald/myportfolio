@@ -1177,7 +1177,7 @@ var simplemaps_worldmap_mapdata={
       ]
     },
     "4": {
-      name: "South Asia",
+      name: "South Asia and Australia",
       states: [
         "SG",
         "TW",
