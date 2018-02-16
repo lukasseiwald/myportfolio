@@ -267,7 +267,7 @@ body {
 
   		}
   		.about_text_wrapper{
-  			margin-top: 3em;
+  			margin: 3em 2em;
   			display: flex;
   			justify-content: center;
   			.about_text{
@@ -287,12 +287,12 @@ body {
   				flex-direction: row;
   				.lived_color{
   					margin-right: 1em;
-  					width: 1em;
-  					height: 1em;
+  					width: 1.5em;
+  					height: 1.5em;
 					background-color: #FF0032;
   				}
   				.lived_text{
-
+					font-size: 1.5em;
   				}
   			}
   			.visited{
@@ -301,12 +301,44 @@ body {
   				flex-direction: row;
   				.visited_color{
   					margin-right: 1em;
-  					width: 1em;
-  					height: 1em;
+  					width: 1.5em;
+  					height: 1.5em;
   					background-color: #1C95A3;
   				}
   				.visited_text{
-
+					font-size: 1.5em;
+  				}
+  			}
+  			@media screen and (max-width: $screen-break2) {
+				display: none;			
+			}
+  		}
+  		#map{
+  			@media screen and (max-width: $screen-break2) {
+				display: none;			
+			}
+  		}
+  		.skill_wrapper{
+  			display: flex;
+  			flex-direction: row;
+  			justify-content: space-around;
+  			div{
+  				display: flex;
+  				flex-direction: column;
+  				justify-content: flex-start;
+  				padding: 1em 1em;
+  				width: 8em;
+  				border: 0.1em solid #888;
+  				margin: 2em 2em;
+  				h4{
+  					font-family: 'Roboto';
+  					font-size: 1.5em;
+  				}
+  				ul{
+  					li{
+  						margin-top: 0.7em;
+  						list-style: none;
+  					}
   				}
   			}
   		}
