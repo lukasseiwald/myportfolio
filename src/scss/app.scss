@@ -499,12 +499,8 @@ body {
   			align-items: center;
   			justify-content: space-around;
   			.skill{
-  				display: flex;
-  				flex-direction: column;
-  				justify-content: flex-start;
   				padding: 1em 1em;
-  				width: 8em;
-  				border: 0.1em solid #888;
+  				border: 1px solid #888;
   				margin-top: 1em;
   				h4{
   					font-family: 'Roboto';
@@ -520,10 +516,7 @@ body {
   					}
   				}
   			}
-  			.skill1{
-  				height: 18em;
-  			}
-  			.skill2{
+  			.skill1 .skill2{
   				height: 18em;
   			}
   			.skill3{
@@ -540,7 +533,7 @@ body {
   			}
   		}
   		@media only screen and (max-width: 500px) {
-  		    height: 236vh;
+  		    height: 256vh;
   		    .skill_wrapper{
   		    	flex-direction: column;
 				.skill{
@@ -564,10 +557,37 @@ body {
   		    	}
   		    }
 		} 
+		@media only screen and (min-width: 780px) {
+  		    height: 100vh;
+  		    .skill_wrapper{
+  		    	flex-direction: row;
+  		    	.skill_wrapper2{
+	  		    	display: block;
+	  		    	.skill{
+	  		    		height: 17em;
+	  		    	}
+	  		    }
+  		    }
+		} 
+		@media only screen and (min-width: 1100px) {
+  		    .skill{
+	  			width: 17em;
+	  		}
+	  	}   	
 		@media only screen and (min-width: 1520px) {
   		    height: 80vh;
   		    .skill_wrapper{
   		    	flex-direction: row;
+  		    	.skill_wrapper2{
+	  		    	display: flex;
+	  		    	flex-direction: row;
+	  		    	.skill{
+	  		    		height: 17em;
+						&:nth-child(2n+1){
+							margin-right: 3em;
+						}
+	  		    	}
+	  		    }
   		    }
 		} 
 	}
