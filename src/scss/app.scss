@@ -3,6 +3,8 @@ $red: #FF0032;
 $dark: #160A16;
 $blue: #074050;
 $light-blue: #1C95A3;
+$skin-color: #C49363;
+$brown: #6E563D;
 $screen-break1: 440px;
 $screen-break2: 610px;
 $screen-break3: 910px;
@@ -486,110 +488,112 @@ body {
 			}
 		}
 	}
-	#skills{
-		h1{
-			margin-left: 1em;
-			padding-top: 1em;
-			margin-bottom: 1em;
+
+	.skillscomic{
+		height: 60vh;
+		margin-top: 2em;
+		display:flex;
+  		flex-wrap:wrap;
+  		padding:1vmin;
+  		.panel {
+		  background-color:#fff;
+		  border:solid 2px #000;
+		  box-shadow:0 6px 6px -6px #000;
+		  display:inline-block;
+		  flex:1 1;
+		  height:200px;
+		  margin:1vmin;
+		  overflow:hidden;
+		  position:relative;
 		}
-		.skill_wrapper{
-  			display: flex;
-  			flex-direction: row;
-  			width: 100%;
-  			align-items: center;
-  			justify-content: space-around;
-  			.skill{
-  				padding: 1em 1em;
-  				border: 1px solid #888;
-  				margin-top: 1em;
-  				h4{
-  					font-family: 'Roboto';
-  					font-size: 1.5em;
-  					margin-top: 0.5em;
-  					margin-bottom: 0.5em;
-  				}
-  				ul{
-  					li{
-  						font-family: 'Roboto';
-  						margin-top: 1.5em;
-  						list-style: none;
-  					}
-  				}
-  			}
-  			.skill1 .skill2{
-  				height: 18em;
-  			}
-  			.skill3{
-  				height: 12em;
-  			}
-  			.skill4{
-  				height: 15em;
-  			}
-  			.skill5{
-  				height: 13em;
-  			}
-  			.skill6{
-  				height: 23em;
-  			}
-  		}
-  		@media only screen and (max-width: 500px) {
-  		    height: 256vh;
-  		    .skill_wrapper{
-  		    	flex-direction: column;
-				.skill{
-					width: 16em;
-				}
-  		    }
-		} 
-		@media only screen and (min-width: 500px) {
-  		    height: 130vh;
-  		    .skill_wrapper{
-  		    	flex-direction: column;
-				.skill_wrapper2{
-	  		    	display: flex;
-	  		    	flex-direction: row;
-					.skill{
-						width: 11em;
-						margin-left: 1em;
-						margin-right: 1em;
-						padding-bottom: 2em;
-					}
-  		    	}
-  		    }
-		} 
-		@media only screen and (min-width: 780px) {
-  		    height: 100vh;
-  		    .skill_wrapper{
-  		    	flex-direction: row;
-  		    	.skill_wrapper2{
-	  		    	display: block;
-	  		    	.skill{
-	  		    		height: 17em;
-	  		    	}
-	  		    }
-  		    }
-		} 
-		@media only screen and (min-width: 1100px) {
-  		    .skill{
-	  			width: 17em;
-	  		}
-	  	}   	
-		@media only screen and (min-width: 1520px) {
-  		    height: 80vh;
-  		    .skill_wrapper{
-  		    	flex-direction: row;
-  		    	.skill_wrapper2{
-	  		    	display: flex;
-	  		    	flex-direction: row;
-	  		    	.skill{
-	  		    		height: 17em;
-						&:nth-child(2n+1){
-							margin-right: 3em;
-						}
-	  		    	}
-	  		    }
-  		    }
-		} 
+
+		.text {
+		  background-color:#fff;
+		  border:solid 2px #000;
+		  margin:0;
+		  padding:3px 10px;
+		}
+		.top-left {
+		  left:-6px;
+		  position:absolute;
+		  top:-2px;
+		  transform:skew(-15deg);
+		}
+		.panel:nth-child(1) {
+		  flex-basis: 400px;
+		  ul{
+			 	text-align: center;
+			    padding-top: 1.6em;
+			    list-style: none;
+			    font-size: 1.5em;
+			    color: #eee;
+		  	}
+		}
+		.panel:nth-child(2) {
+		  flex-basis: 200px;
+		  	ul{
+			 	text-align: center;
+			    padding-top: 2.4em;
+			    list-style: none;
+			    font-size: 1.2em;
+			    color: #eee;
+		  	}
+		}
+		.panel:nth-child(3) {
+		  flex-basis: 200px;
+		  	ul{
+			 	text-align: center;
+			    padding-top: 2.5em;
+			    list-style: none;
+			    font-size: 1.5em;
+			    color: #eee;
+		  	}
+		}
+		.panel:nth-child(4) {
+		  flex-basis: 200px;
+		  	ul{
+			 	text-align: center;
+			    padding-top: 2em;
+			    list-style: none;
+			    font-size: 1.5em;
+			    color: #eee;
+		  	}
+		}
+		.panel:nth-child(5) {
+		  flex-basis: 200px;
+		  	ul{
+			 	text-align: center;
+			    padding-top: 2.4em;
+			    list-style: none;
+			    font-size: 1.5em;
+			    color: #eee;
+		  	}
+		}
+		.panel:nth-child(6) {
+		  flex-basis: 200px;
+		  	ul{
+			 	text-align: center;
+			   	padding-top: 1.6em;
+			    list-style: none;
+			    font-size: 1.5em;
+			    color: #eee;
+		  	}
+		}
+		.panel:nth-child(4n+1) {
+		  background-image:radial-gradient(circle, #ff6e6e, #b00325);
+		}
+
+		.panel:nth-child(4n+2) {
+		  background-image:radial-gradient(circle, $light-blue, $blue);
+		}
+
+		.panel:nth-child(4n+3) {
+		  background-image:radial-gradient(circle, #24a31c, #075009);
+		}
+
+		.panel:nth-child(4n+4) {
+		  background-image:radial-gradient(circle, #9b6125, #503009);
+		}
 	}
 	#contact{
 		background-color: #1C95A3;
