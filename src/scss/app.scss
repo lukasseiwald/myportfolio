@@ -14,7 +14,7 @@ $screen-break3: 910px;
 	padding: 0; 
 }
 h1{
-	color: $red;
+	color: $blue;
 	font-size: 3em;
 	font-family: 'Bangers', cursive;
 }
@@ -58,7 +58,7 @@ body {
 	  	z-index: 2000;
 	  	justify-content: space-between;
 	  	padding: 0.5em 1em 0.5em 1em;
-	  	background-color: #074050;
+	  	background-color: #074050db;
 	  	transition: 0.2s all ease-in;
 	  	&.fade-in{
 	  		display: flex;
@@ -334,16 +334,18 @@ body {
 		}
 	}
 	#projects{
-		background-color: #C49363;
+		background-color: #eee;
+		height: 150vh;
 		h1{
 			margin-left: 1em;
 			padding-top: 1em;
-			color: #160A16;
+			color: $blue;
 			margin-bottom: 1em;
 		}
 		.projects_wrapper{
 			display: table;
   			width: 100%;
+  			margin-top: 4em;
 			.project{
 				display: table-cell;
   				align-items: center;
@@ -351,6 +353,7 @@ body {
 				display: flex;
 				justify-content: center;
 				h2{
+					color: #C49363;
 					margin-bottom: 0.5em;
 				}
 				hr{
@@ -359,56 +362,99 @@ body {
 				p{
 					font-family: 'Roboto';
 					font-size: 1em;
+					line-height: 1.5em;
 
 				}
 				.project_info_wrapper{
 					font-family: 'Roboto';
-					font-size: 1.5em;
+					.link_wrapper{
+						display: flex;
+    					justify-content: center;
+						.link_button{
+							text-align: center;
+							border: 0.1em solid $blue;
+							padding: 0 0;
+							width: 8em;
+							margin-top: 1em;
+							border-radius: 0.5em;
+							text-transform: uppercase;
+							transition: 0.3s all ease-in;
+							a{	
+								display: block;
+								padding: 1em 2em;
+								font-size: 0.7em;
+								text-decoration: none;
+								color: $blue;
+							}
+							&:hover{
+								background-color: $blue;
+								a{
+									color: $light;
+								}
+							}
+							&:nth-child(2){
+								margin-left: 1em;
+							}
+						}
+					}
+				}
+				&:first-child{
+					border-bottom: 1px solid #d7d7d7;
+				}
+				&:nth-child(2){
+					margin-top: 3em;
+					.screenshot{
+						margin-top: 2em;
+					}
 				}
 			}
 		}
 		@media only screen and (max-width: 430px) {
-			height: 160vh;
 			.screenshot{
 					width:  300px;
 					height: 300px;
 				}
 		}
 		@media only screen and (min-width: 430px) {
-			height: 170vh;
+			.screenshot{
+				width: 350px;
+				height: 350px;
+			}
+		}
+		@media only screen and (min-width: 600px) {
 			.screenshot{
 				width: 400px;
 				height: 400px;
 			}
 		}
-		@media only screen and (min-width: 870px) {
-			.screenshot{
-				width: 500px;
-				height: 500px;
-			}
-		}
 		@media only screen and (max-width: 1000px) {
+			height: 165vh;
 			.project{
 				flex-direction: column;
 				.project_info_wrapper{
+					display: table-cell;
+	  				text-align: center;
+	  				vertical-align: middle;
 					margin-left: 2em;
 					margin-right: 2em;
 					hr{
-						width: 6em;
+						display: none;
 					}
 				}
 			}
 		}
 		@media only screen and (min-width: 1000px) {
+			height: 135vh;
 			.project{
 				.project_info_wrapper{
-					margin-left: 6em;
-					margin-right: 6em;
+					font-size: 1.3em;
+					margin-left: 2em;
+					margin-right: 2em;
 					height: 400px;
 					hr{
+
 						width: 15em;
 					}
-					margin-right: 8em;
 				}
 				.screenshot{
 					margin-right: 6em;
@@ -416,10 +462,26 @@ body {
 				flex-direction: row;
 			}
 		}
-		@media only screen and (min-width: 1200px) {
-			.screenshot{
+		//@media only screen and (max-width: 1400px) {
+		//	height: 115vh;
+		//}
+		@media only screen and (min-width: 1400px) {
+			height: 165vh;
+			.project{
+				.project_info_wrapper{
+					font-size: 1.5em;
+					margin-left: 4em;
+					margin-right: 4em;
+					hr{
+						width: 15em;
+					}
+				}
+				.screenshot{
+					margin-right: 6em;
+				
 				width: 600px;
 				height: 600px;
+				}
 			}
 		}
 	}
