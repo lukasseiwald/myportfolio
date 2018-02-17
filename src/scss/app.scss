@@ -410,7 +410,7 @@ body {
 			}
 		}
 		@media only screen and (max-width: 430px) {
-			height: 225vh;
+			height: 230vh;
 			.screenshot{
 					width:  300px;
 					height: 300px;
@@ -454,7 +454,6 @@ body {
 					margin-right: 2em;
 					height: 400px;
 					hr{
-
 						width: 15em;
 					}
 				}
@@ -488,35 +487,89 @@ body {
 		}
 	}
 	#skills{
-		display: none;
 		h1{
 			margin-left: 1em;
 			padding-top: 1em;
+			margin-bottom: 1em;
 		}
 		.skill_wrapper{
   			display: flex;
   			flex-direction: row;
+  			width: 100%;
+  			align-items: center;
   			justify-content: space-around;
-  			div{
+  			.skill{
   				display: flex;
   				flex-direction: column;
   				justify-content: flex-start;
   				padding: 1em 1em;
   				width: 8em;
   				border: 0.1em solid #888;
-  				margin: 2em 2em;
+  				margin-top: 1em;
   				h4{
   					font-family: 'Roboto';
   					font-size: 1.5em;
+  					margin-top: 0.5em;
+  					margin-bottom: 0.5em;
   				}
   				ul{
   					li{
-  						margin-top: 0.7em;
+  						font-family: 'Roboto';
+  						margin-top: 1.5em;
   						list-style: none;
   					}
   				}
   			}
+  			.skill1{
+  				height: 18em;
+  			}
+  			.skill2{
+  				height: 18em;
+  			}
+  			.skill3{
+  				height: 12em;
+  			}
+  			.skill4{
+  				height: 15em;
+  			}
+  			.skill5{
+  				height: 13em;
+  			}
+  			.skill6{
+  				height: 23em;
+  			}
   		}
+  		@media only screen and (max-width: 500px) {
+  		    height: 236vh;
+  		    .skill_wrapper{
+  		    	flex-direction: column;
+				.skill{
+					width: 16em;
+				}
+  		    }
+		} 
+		@media only screen and (min-width: 500px) {
+  		    height: 130vh;
+  		    .skill_wrapper{
+  		    	flex-direction: column;
+				.skill_wrapper2{
+	  		    	display: flex;
+	  		    	flex-direction: row;
+					.skill{
+						width: 11em;
+						margin-left: 1em;
+						margin-right: 1em;
+						padding-bottom: 2em;
+					}
+  		    	}
+  		    }
+		} 
+		@media only screen and (min-width: 1520px) {
+  		    height: 80vh;
+  		    .skill_wrapper{
+  		    	flex-direction: row;
+  		    }
+		} 
 	}
 	#contact{
 		background-color: #1C95A3;
