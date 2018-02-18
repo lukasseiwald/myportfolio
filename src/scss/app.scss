@@ -218,6 +218,9 @@ body {
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+        -webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
 		clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 92% 75%, 92% 90%, 69% 75%, 0% 75%);		
 		display: flex;
   		justify-content: center;
@@ -521,6 +524,7 @@ body {
 				 	text-align: center;
 				    font-family: 'Roboto';
 				    list-style: none;
+				    color: #333
 				}
 			}
 			.text {
@@ -542,7 +546,6 @@ body {
 				ul{
 				    padding-top: 1.3em;
 				    font-size: 1.5em;
-				    color: #eee;
 				}
 			}
 			.skill:nth-child(2) {
@@ -551,7 +554,6 @@ body {
 			  	ul{
 				    padding-top: 2.4em;
 				    font-size: 1.2em;
-				    color: #eee;
 			  	}
 			}
 			.skill:nth-child(3) {
@@ -560,7 +562,6 @@ body {
 			  	ul{
 				    padding-top: 2.5em;
 				    font-size: 1.5em;
-				    color: #333;			  	
 			  	}
 			}
 			.skill:nth-child(4) {
@@ -569,7 +570,6 @@ body {
 			  	ul{
 				    padding-top: 2em;
 				    font-size: 1.5em;
-					color: #333;			  	
 				}
 			}
 			.skill:nth-child(5) {
@@ -578,7 +578,6 @@ body {
 			  	ul{
 				    padding-top: 2.4em;
 				    font-size: 1.5em;
-				    color: #333;			  	
 			  	}
 			}
 			.skill:nth-child(6) {
@@ -587,7 +586,6 @@ body {
 			  	ul{
 				   	padding-top: 1.2em;
 				    font-size: 1.5em;
-					color: #eee;			  	
 				}
 			}
 		}
@@ -687,14 +685,14 @@ body {
 		  and (max-device-width: 480px)
 		  and (-webkit-min-device-pixel-ratio: 2)
 		  and (orientation: portrait) {
-		  	height: 93vh;
+		  	height: 67vh;
 		}
 		@media only screen 
 		  and (min-device-width: 320px) 
 		  and (max-device-width: 480px)
 		  and (-webkit-min-device-pixel-ratio: 2)
 		  and (orientation: landscape) {
-		  	height: 100vh;
+		  	height: 80vh;
 		  	margin-top: 40em;
 		}
 		@media only screen and (min-width: 700px) {

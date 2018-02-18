@@ -729,7 +729,7 @@ var simplemaps_worldmap_mapdata={
     },
     US: {
       name: "<p style=\"font-size: 2.5em; font-family: 'Bangers'; color: rgb(255, 0, 50)\";>United States<p>",
-      description: "<div style=\"width: 24em\";> <p style=\"font-size: 1.5em; font-family: 'Roboto'; color: #160A16\";>Went to High School in Pennsylvania in the year 2013</p>",
+      description: "<div style=\"width: 24em\";> <p style=\"font-size: 1.5em; font-family: 'Roboto'; color: #160A16\";>2013: Chambersburg Area Senior High School in Pennsylvania</p>",
       hover_color: "#DD0010",
       color: "#FF0032"
     },
