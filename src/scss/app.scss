@@ -212,7 +212,7 @@ body {
   	}
 	header {
 	  	position: relative;
-	  	height: 90vh;
+	  	height: 94vh;
 	  	background: #222 url("../../src/img/background_start_blur.jpg") fixed;
 	    -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -258,19 +258,19 @@ body {
 				margin-top: 4em;
 			}
 		}
-		@media only screen 
+		/*@media only screen 
 		  and (min-device-width: 320px) 
 		  and (max-device-width: 480px)
 		  and (-webkit-min-device-pixel-ratio: 2)
 		  and (orientation: portrait) {
 		  	height: 120vh
-		}
+		}*/
 		@media only screen 
-		  and (min-device-width: 320px) 
-		  and (max-device-width: 480px)
+		  and (min-device-width: 320px)
+		  and (max-device-width: 420px)  
 		  and (-webkit-min-device-pixel-ratio: 2)
 		  and (orientation: landscape) {
-		  	height: 170vh
+		  	height: 205vh;
 		}		
 	}
 	/* mobile */
@@ -591,13 +591,13 @@ body {
 				}
 			}
 		}
-		@media only screen 
+		/*@media only screen 
 		  and (min-device-width: 320px) 
 		  and (max-device-width: 480px)
 		  and (-webkit-min-device-pixel-ratio: 2)
 		  and (orientation: portrait) {
 		  	margin-top: 19em;
-		}
+		}*/
 		@media only screen 
 		  and (min-device-width: 320px) 
 		  and (max-device-width: 480px)
@@ -624,20 +624,22 @@ body {
 	#contact{
 		background-color: #1C95A3;
 		text-align: center;
-		height: 120vh;
 		h1{
 			color: $light;
-			margin-bottom: 2em;
-		}
-		.contact_text{
-			color: #fefefe;
-			font-size: 1.5em;
-			margin-bottom: 4em;
+			margin-bottom: 1em;
 		}
 		.contact_wrapper{
 			margin-top: 3em;
 			display: flex;
 			justify-content: center;
+			flex-direction: column;
+    		align-items: center;
+			.contact_text{
+				color: #fefefe;
+				font-size: 1.5em;
+				margin-bottom: 1.5em;
+				padding: 0em 2em;
+			}
 			.mail_link{
 				text-decoration: none;
 				color: $light;
@@ -671,14 +673,14 @@ body {
 				    }
 				}
 			}
-		}
-		.social_wrapper{
-			margin-top: 7em;
+			.social_wrapper{
+				margin-top: 2em;
 
-			.social_img{
-				padding: 1em 1em;
-				width: 4em;
-				height: 4em;
+				.social_img{
+					padding: 1em 1em;
+					width: 4em;
+					height: 4em;
+				}
 			}
 		}	
 		@media only screen 
@@ -686,15 +688,32 @@ body {
 		  and (max-device-width: 480px)
 		  and (-webkit-min-device-pixel-ratio: 2)
 		  and (orientation: portrait) {
-		  	margin-top: 25em;
+		  	height: 93vh;
 		}
 		@media only screen 
 		  and (min-device-width: 320px) 
 		  and (max-device-width: 480px)
 		  and (-webkit-min-device-pixel-ratio: 2)
 		  and (orientation: landscape) {
+		  	height: 100vh;
 		  	margin-top: 40em;
+		}
+		@media only screen and (min-width: 700px) {
+			height: 60vh
 		}	
+	}
+	.footer{
+		height: 10vh;
+		background-color: $blue;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		div{
+			p{
+				color: #fefefe;
+			}
+		}
 	}
 
 }
