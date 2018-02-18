@@ -743,6 +743,11 @@ body {
 					&:hover{
 						transform: rotate(-45deg);
 					}
+					&:nth-child(2){
+						&:hover{
+							transform: rotate(45deg);
+						}
+					}
 				}
 			}
 		}	
