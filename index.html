@@ -20,22 +20,22 @@
     <nav id="navDrop">
       <ul>
         <li class="nav-item active">
-          <a class="nav-link scroll" href="#about">
+          <a onClick="dropDown()" class="nav-link scroll" href="#about">
             About
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link scroll" href="#projects">
+          <a onClick="dropDown()" class="nav-link scroll" href="#projects">
             Projects
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link scroll" href="#skills">
+          <a onClick="dropDown()" class="nav-link scroll" href="#skills">
             Skills
           </a>
         </li class="nav-item">
         <li>
-          <a class="nav-link scroll" href="#contact">
+          <a onClick="dropDown()" class="nav-link scroll" href="#contact">
             Contact
           </a>
         </li>
@@ -61,12 +61,10 @@
   	</header>
   	<section id="about">
 	  <h1>About</h1>
-	  <div class="about_text_wrapper">
+	  <div id="trigger_nav" class="about_text_wrapper">
 		<p class="about_text">
 			Apart from being a huge fan of superhero comics... I am a Web Development Major at the University of Applied Sciences Salzburg, Austria. And part-time hero, at least to my grandfather, in terms of technical problems.
 		</p>
-	  </div>
-	  <div id="trigger_nav">
 	  </div>
 	  <div class="legend_wrapper">
 		<div class="lived">
@@ -92,7 +90,6 @@
 		  	<div class="project">
 		  		<div class="project_info_wrapper">
 					<h2>A Hero's Hand</h2>
-					<hr>
 				  	<p class=project_text>My first web project: A website offering users a chance to prove themselves heroic or to get help. Written in PHP and use of a PostgreSQL database. </p>	
 				  	<div class="link_wrapper">
 				  		<div class="link_button"><a href="https://users.multimediatechnology.at/~fhs39988/MMP1/">Visit Website</a></div>
@@ -103,7 +100,6 @@
 		  	<div class="project">
 		  		<div class="project_info_wrapper">
 				  	<h2>Kono</h2>
-				  	<hr>
 					<p class=project_text>My last web project: An Event planner with extended guest information and an inventory list. The Web App was developed collaborating with a student colleague, Christoph Mayr, within a week. I worked on the React App, developing the features and connected it to a Firebase Realtime Database. Additionaly, we spend equal time designing the User Interface. </p>
 				  	<div class="link_wrapper">
 					  	<div class="link_button"><a href="https://kono-eb560.firebaseapp.com/">Visit Website</a></div>
