@@ -265,7 +265,7 @@ body {
 		  and (orientation: portrait) {
 		}*/
 		@media only screen and (max-width: 430px) {
-			height: 70vh;
+			height: 95vh;
 		} 
 		@media only screen
 			and (min-width: 430px)
@@ -285,21 +285,9 @@ body {
 	}
 	/* mobile */
 	#about{
+		margin-top: -14em;
 		text-align: center;
 		background-color: $light;
-  		h1{
-  			margin-top: -29vw;
-    		@media screen and (min-width: $screen-break1) {
-				margin-top: -23vw;
-			}
-			@media screen and (min-width: $screen-break2) {
-				margin-top: -16vw;
-			}
-			@media screen and (min-width: $screen-break3) {
-				margin-top: -6vw;
-			}
-
-  		}
   		.about_text_wrapper{
   			padding: 0em 1em;
   			display: flex;
