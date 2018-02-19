@@ -340,9 +340,6 @@ body {
 				display: none;			
 			}
   		}
-		@media screen and (min-width: $screen-break3) {
-			height: 150vh;
-		}
 
 		/*other phones*/
 		@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) { 
@@ -383,6 +380,7 @@ body {
 		height: 150vh;
 		h1{
 			color: $blue;
+			margin-bottom: 1.5em;
 		}
 		.projects_wrapper{
 			display: table;
@@ -437,6 +435,11 @@ body {
 							&:nth-child(2){
 								margin-left: 1em;
 							}
+						}
+					}
+					@media only screen and (min-width: 647px) {
+						.project_text{
+							padding: 0em 2em;
 						}
 					}
 				}
@@ -768,7 +771,7 @@ body {
 		  and (max-device-width: 480px)
 		  and (-webkit-min-device-pixel-ratio: 2)
 		  and (orientation: portrait) {
-		  	height: 67vh;
+		  	height: 70vh;
 		}
 		@media only screen 
 		  and (min-device-width: 320px) 
