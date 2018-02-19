@@ -478,7 +478,6 @@ body {
 			}
 		}
 		@media only screen and (max-width: 1000px) {
-			//height: 116vh;
 			.project{
 				flex-direction: column;
 				.project_info_wrapper{
@@ -494,7 +493,6 @@ body {
 			}
 		}
 		@media only screen and (min-width: 1000px) {
-			height: 129vh;
 			.project{
 				.project_info_wrapper{
 					font-size: 1.3em;
@@ -564,14 +562,14 @@ body {
 
 		/* screen hd  */
 		@media only screen and (device-width: 1920px) and (max-device-height: 1080px){ 
-			height: 138vh;
+			height: 153vh;
 		}
 		/* 15 inch screen */
 		@media only screen and (device-width: 1366px) and (max-device-height: 768px){ 
-			height: 138vh;
+			height: 153vh;
 		}
 		@media only screen and (device-width: 1824px){ 
-			height: 138vh;
+			height: 153vh;
 		}
 		
 	}
