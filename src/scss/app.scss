@@ -509,11 +509,12 @@ body {
 				flex-direction: row;
 			}
 		}
-		//@media only screen and (max-width: 1400px) {
-		//	height: 115vh;
-		//}
+		@media only screen and (min-width: 1000px) 
+			and (max-width: 1400px){
+			height: 123vh;
+		}
 		@media only screen and (min-width: 1400px) {
-			height: 168vh;
+			height: 154vh;
 			.project{
 				.project_info_wrapper{
 					font-size: 1.5em;
