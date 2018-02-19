@@ -558,6 +558,15 @@ body {
 		@media only screen and (device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape){ 
 		    height: 375vh;
 		}
+
+		/* screen hd  */
+		@media only screen and (device-width: 1920px) and (max-device-height: 1080px){ 
+			height: 138vh;
+		}
+		/* 15 inch screen */
+		@media only screen and (device-width: 1366px) and (max-device-height: 768px){ 
+			height: 138vh;
+		}
 	}
 
 	#skills{
@@ -699,6 +708,10 @@ body {
 		@media only screen and (device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) { 
 			height: 181vh;
 		}
+		/* 15 inch screen */
+		@media only screen and (device-width: 1366px) and (max-device-height: 768px){ 
+			height: 88vh;
+		}
 	}
 	#contact{
 		background-color: #1C95A3;
@@ -812,6 +825,10 @@ body {
 		@media only screen and (device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape){ 
 			height: 111vh;
 		}	
+		/* 15 inch screen */
+		@media only screen and (device-width: 1366px) and (max-device-height: 768px){ 
+			height: 55vh;
+		}
 	}
 	.footer{
 		height: 10vh;
