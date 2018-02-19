@@ -33,6 +33,9 @@ h3{
 	font-size: 1.5em;
 	font-family: 'Roboto';
 }
+li{
+	font-family: 'Roboto';
+}
 .flex_wrapper_c{
 	width: 100%;		
 	display: flex;
@@ -567,6 +570,10 @@ body {
 		@media only screen and (device-width: 1366px) and (max-device-height: 768px){ 
 			height: 138vh;
 		}
+		@media only screen and (device-width: 1824px){ 
+			height: 138vh;
+		}
+		
 	}
 
 	#skills{
@@ -711,6 +718,9 @@ body {
 		/* 15 inch screen */
 		@media only screen and (device-width: 1366px) and (max-device-height: 768px){ 
 			height: 88vh;
+		}
+		@media only screen and (max-device-height: 768px){ 
+			margin-bottom: 3em;
 		}
 	}
 	#contact{
