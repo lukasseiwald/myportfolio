@@ -677,14 +677,26 @@ body {
 		@media only screen and (max-width: 438px) {
 			height: 232vh;
 		}
+		@media only screen and (max-width: 438px) and (min-height: 960px){
+			height: 153vh;
+		}		
+		@media only screen and (min-width: 438px) and (min-height: 960px) {
+			height: 125vh;
+		}
 		@media only screen and (min-width: 438px) {
 			height: 125vh;
 		}
 		@media only screen and (min-width: 647px) {
-			height: 98vh;
+			height: 112vh;
+		}
+		@media only screen and (min-width: 665px) {
+			height: 93vh;
+		}
+		@media only screen and (min-width: 901px) {
+			height: 93vh;
 		}
 		@media only screen and (min-width: 883px) {
-			height: 80vh;
+			height: 94vh;
 		}
 		@media only screen and (min-width: 1552px) {
 			height: 55vh;
