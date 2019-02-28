@@ -409,7 +409,9 @@ var simplemaps_worldmap_mapdata={
     },
     KH: {
       name: "Cambodia",
-      description: " "
+      description: " ",
+      color: "#1C95A3",
+      hover_color: "#0A7391"
     },
     KR: {
       name: "Republic of Korea",
@@ -684,8 +686,10 @@ var simplemaps_worldmap_mapdata={
       description: " "
     },
     TH: {
-      name: "Thailand",
-      description: " "
+      name: "<p style=\"font-size: 2.5em; font-family: 'Bangers'; color: rgb(255, 0, 50)\";>Thailand<p>",
+      description: "<div style=\"width: 24em\";> <p style=\"font-size: 1.5em; font-family: 'Roboto'; color: #160A16\";>2018: Web Developer Internship at Kos Design in Bangkok</p>",
+      hover_color: "#DD0010",
+      color: "#FF0032"
     },
     TJ: {
       name: "Tajikistan",
@@ -743,7 +747,9 @@ var simplemaps_worldmap_mapdata={
     },
     VN: {
       name: "Vietnam",
-      description: " "
+      description: " ",
+      color: "#1C95A3",
+      hover_color: "#0A7391"
     },
     VU: {
       name: "Vanuatu",
