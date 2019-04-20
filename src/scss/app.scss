@@ -828,11 +828,11 @@ body {
 		  	margin-top: 40em;
 		}
 		@media only screen and (min-width: 700px) {
-			height: 46vh;
+			height: 60vh;
 		}
 		/*other phones */
 		@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait){
-			height: 46vh; 
+			height: 60vh; 
 		}
 		@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape){ 
 			height: 111vh;
